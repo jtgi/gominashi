@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,18 +32,18 @@ const GominashiHeader = () => (
       <h1 className="text-2xl font-semibold">Gominashi</h1>
 
       <nav className="space-x-4">
-        <a href="#" className="text-white hover:text-gray-300">
+        <Link href="/" className="text-white hover:text-gray-300">
           Home
-        </a>
-        <a href="#" className="text-white hover:text-gray-300">
+        </Link>
+        <Link href="/about" className="text-white hover:text-gray-300">
           About
-        </a>
-        <a href="#" className="text-white hover:text-gray-300">
+        </Link>
+        <Link href="/services" className="text-white hover:text-gray-300">
           Services
-        </a>
-        <a href="#" className="text-white hover:text-gray-300">
+        </Link>
+        <Link href="/contact" className="text-white hover:text-gray-300">
           Contact
-        </a>
+        </Link>
       </nav>
     </div>
   </header>
